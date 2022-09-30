@@ -444,7 +444,6 @@
       <div class="footer-flex">
 
         <div class="footer-block1">
-
           <a class="logo-link" href="">Web<span class="logo-footer">Studio</span></a>
           <address class="address">
             <ul class="items-address">
@@ -460,6 +459,7 @@
             </ul>
           </address>
         </div>
+
         <div class="footer-block2">
           <strong class="subtitle">Приєднуйтесь</strong>
           <ul class="footer-list-icons">
@@ -504,7 +504,7 @@
 
            <div class="form-field-newsletter">
             <label class="info" >
-            <input class = "mail-newsletter " type="mail" name="mail"  required placeholder="E-mail" />
+            <input class = "mail-newsletter " type="email" name="mail"  required placeholder="E-mail" />
             </label>         
           </div> 
 
@@ -514,32 +514,17 @@
               <use class = "icon-send"  href="./images/icons.svg#icon-icon-send"></use>                 
             </svg>  
           </button>
-          
+
         </div>
         </form>
       </div>
     </div>  
-  </div>
-</div>
+
+
   </footer>
  
   <script src="./js/modal.js"></script>
 
-  <script>
-    (() => {
-      document
-        .querySelector('.js-speaker-form')
-        .addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`),
-          );
-
-          e.currentTarget.reset();
-        });
-    })();
-  </script>
 </body>
 
 </html>
